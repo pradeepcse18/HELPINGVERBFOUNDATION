@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Helping Verb Foundation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+        body {font-family: "Lato", sans-serif;
+            background-image: url(images/bg.jpg);
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+        .mySlides {display: none}
+        a.w3-bar-item:hover{
+            background-color:white!important;
+            text-decoration: none !important;
+        }
+        #map {
+            height: 400px;  
+            width: 100%;  
+        }
+        h2{
+            color: skyblue;
+        }
+    </style>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        function initMap() {
+            var v = {lat: 25.321684, lng: 82.987289};
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 6, center: v});
+            var marker = new google.maps.Marker({position: v, map: map});
+        }
+
+    </script>
+
+    <body>
+        <div class="w3-top" style="margin-top: 10px 10px">
+            <div class="w3-bar w3-black w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large">
+                    <img src="images/main_logo.jpg" alt="HELPING VERB FOUNDATION" width="30px" height="30px">  HELPING VERB FOUNDATION</a>
+                <a href="project.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+                <a href="department.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DEPARTMENTS</a>
+                <a href="testimonials.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TESTIMONIALS</a>
+                <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
+                <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
+                <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT US</a>
+            </div>
+        </div>
+        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+            <a href="project.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+            <a href="department.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DEPARTMENTS</a>
+            <a href="testimonials.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TESTIMONIALS</a>
+            <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GALLERY</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT US</a>
+        </div>
+
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px; margin-top: 100px" id="contact">
+            <h2 class="w3-wide w3-center" style="font-family: 'Courgette', cursive;">CONTACT</h2>
+            <p class="w3-opacity w3-center"><i>Helping Person! Contact Us</i></p>
+            <div class="w3-row w3-padding-32 text-center justify">
+                <div class="w3-col m12 w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker"></i>    Plot No. 246/2, Chandan nagar colony Karaundi,<br> Varanasi, Uttar Pradesh -
+                    221005<br><br>
+                    <i class="fa fa-phone"></i>   Phone: +918090110417,+918920908899 <br>
+                    +917275056305,+919304180647 <br><br>
+                    <i class="fa fa-envelope"> </i>      Email: Helpingverb.foundation@gmail.com<br>
+                </div>
+            </div>
+        </div>
+         <div id="map1" class="text-center">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.9657421096927!2d82.97827031451351!3d25.271737834875026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e323a9aa734e3%3A0xa3378fbe340cdc4a!2s246%2F2%2C+Gandhi+Nagar%2C+Mohanpuri+Colony%2C+Karaundi%2C+Varanasi%2C+Uttar+Pradesh+221005!5e0!3m2!1sen!2sin!4v1560456475311!5m2!1sen!2sin" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-white w3-xlarge" style="color: white">
+            <a style="color: white" href="https://m.facebook.com/Helpingverb.foundation/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>  
+            <a style="color: white" href="https://www.instagram.com/helpingverb.foundation/?igshid=qdq8bqt6p1ar"><i class="fa fa-instagram w3-hover-opacity"></i></a> 
+            <a style="color: white" href="https://twitter.com/helping_verb?s=08"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a style="color: white" href="https://www.youtube.com/channel/UC-TaV7GfiwM_-vlA8yvZQUA"> <i class="fa fa-youtube w3-hover-opacity"></i></a>
+            <p class="w3-medium">Terms of Use, Privacy and Security Policy <br>
+                Copyright © 2019 Helping verb foundation.<br>
+                Developed & Hosted By- pradeep kumar</p>
+        </footer>
+
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9cP_nUJkNiMLvjE-hQiH-HYhcgiB1Y7k&callback=initMap"></script>
+    </body>
+
+
+</html>

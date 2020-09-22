@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Helping Verb Foundation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+        body {font-family: "Lato", sans-serif;
+            background-image: url(images/bg.jpg);
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;}
+        .mySlides {display: none}
+        a.w3-bar-item:hover{
+            background-color:white!important;
+            text-decoration: none !important;
+        }
+        h2{
+            color: skyblue;
+        }
+    </style>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+    <body>
+        <div class="w3-top" style="margin-top: 10px 10px">
+            <div class="w3-bar w3-black w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large">
+                    <img src="images/main_logo.jpg" alt="HELPING VERB FOUNDATION" width="30px" height="30px">  HELPING VERB FOUNDATION</a>
+                <a href="project.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+                <a href="department.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DEPARTMENTS</a>
+                <a href="testimonials.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TESTIMONIALS</a>
+                <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALLERY</a>
+                <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
+                <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT US</a>
+            </div>
+        </div>
+        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+            <a href="project.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+            <a href="department.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DEPARTMENTS</a>
+            <a href="testimonials.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TESTIMONIALS</a>
+            <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GALLERY</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT US</a>
+        </div>
+
+        <div class="text-center" style="font-family: 'Courgette', cursive;color: white; margin-bottom:100px; margin-top:170px">
+            <h2>WHO WE ARE ?</h2>
+            <h4>Helping Verb Foundation is an organization to help, nurture, love and fulfill people's needs and dreams.</h4>  
+            <br><br><br>
+            <h2>WHAT WE DO ?</h2>
+            <h4>We want to unlock the full potential of every child so they can do the best for themselves and for the world too.</h4>
+        </div>
+
+
+        <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-white w3-xlarge" style="color: white">
+            <a style="color: white" href="https://m.facebook.com/Helpingverb.foundation/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>  
+            <a style="color: white" href="https://www.instagram.com/helpingverb.foundation/?igshid=qdq8bqt6p1ar"><i class="fa fa-instagram w3-hover-opacity"></i></a> 
+            <a style="color: white" href="https://twitter.com/helping_verb?s=08"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a style="color: white" href="https://www.youtube.com/channel/UC-TaV7GfiwM_-vlA8yvZQUA"> <i class="fa fa-youtube w3-hover-opacity"></i></a>
+            <p class="w3-medium">Terms of Use, Privacy and Security Policy <br>
+                Copyright © 2019 Helping verb foundation.<br>
+                Developed & Hosted By- pradeep kumar</p>
+        </footer>
+    </body>
+</html>
